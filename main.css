@@ -1,0 +1,69 @@
+@import url("styles/reset.css");
+@import url("styles/menu.css");
+@import url("styles/title.css");
+@import url("styles/about.css");
+@import url("styles/skills-hobbies.css");
+@import url("styles/formacion.css");
+@import url("styles/experience.css");
+@import url("styles/contacto.css");
+@import url("styles/footer.css");
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.tudo{
+/*     display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+
+.about__title,
+.skills__title,
+.hobbies__title,
+.academic__title,
+.experience__section__title,
+.formcontato__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+    .about__title,
+    .skills__title,
+    .hobbies__title,
+    .academic__title,
+    .experience__section__title,
+    .formcontato__title{
+        font-size: 2rem;
+    }
+
+    .about__paragraph{
+        font-size: 1.3rem;
+    }
+
+}
+

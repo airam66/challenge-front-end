@@ -1,0 +1,153 @@
+.formcontato {
+    padding: 30px;
+    background-color: var(--cor-de-section);
+}
+
+.formcontato__contacto {
+    width: 100%;
+}
+
+.formcontato--esquerda {
+    display: none;
+}
+
+.formcontato__text {
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.formcontato__title {
+    margin-bottom: 10px;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.formcontato__container {
+    position: relative;
+    display: flex;
+    height: 45px;
+    width: 100%;
+}
+
+.formcontato__container span {
+    position: absolute;
+    bottom: -45px;
+}
+
+.message-error {
+    color: #d22c2c;
+}
+
+.formcontato__label {
+    position: absolute;
+    top: 28px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: #fff;
+    color: #adadb1;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    /*    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%; */
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 12px 10px;
+    padding-bottom: 0;
+    outline: none;
+    background: #fff;
+    z-index: 1;
+    border-bottom: 2px solid #d9d9da;
+
+}
+
+.formcontato__form .formcontato__container:nth-child(4) {
+    height: 160px;
+}
+
+.formcontato__textarea {
+    resize: none;
+    height: 150px;
+    padding-top: 24px;
+}
+
+
+::placeholder {
+    color: transparent;
+}
+
+
+.formcontato__input:focus+.formcontato__label,
+.formcontato__textarea:focus+.formcontato__label {
+    top: 10px;
+    left: 8px;
+    z-index: 10;
+    font-size: .8rem;
+    color: var(--cor-de-input);
+}
+
+.formcontato__input:focus,
+.formcontato__textarea:focus {
+    border-bottom: 2px solid var(--cor-de-input);
+}
+
+.formcontato__input:not(:placeholder-shown)+.formcontato__label,
+.formcontato__textarea:not(:placeholder-shown)+.formcontato__label {
+    top: 10px;
+    left: 8px;
+    z-index: 10;
+    font-size: .8rem;
+}
+
+
+.formcontato__botao {
+    width: 150px;
+    height: 40px;
+}
+
+.invalid{
+    border: 1px solid #d22c2c;
+}
+
+.formcontato__input:focus.invalid,
+.formcontato__textarea:focus.invalid{
+    border-bottom: 2px solid #d22c2c;
+}
+
+@media (min-width: 1024px) {
+    .formcontato {
+        padding: 40px 100px;
+    }
+
+
+    .formcontato__contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .formcontato--esquerda {
+        display: block;
+    }
+
+    .formcontato__form {
+        height: 100%;
+    }
+}

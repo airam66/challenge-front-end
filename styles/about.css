@@ -1,0 +1,31 @@
+.about{
+    background-color: var(--cor-de-section);
+    padding: 60px 20px;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.about__paragraph{
+    line-height: 1.2;
+}
+
+.about__container img{
+    width: 130px;
+}
+
+
+@media (min-width: 1024px) {
+    .about {
+        padding: 80px 100px;
+        
+    }
+
+    .about__container{
+        width: 75%;
+    }
+
+}
