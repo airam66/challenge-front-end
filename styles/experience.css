@@ -83,4 +83,8 @@ button {
         flex-direction: row-reverse;
         align-items: center;
     }
+
+    .experience__img {
+        width: 70%;
+    }
 }
